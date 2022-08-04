@@ -1,0 +1,162 @@
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+
+body {background-image: url("images/foto-cover.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center; color: white; height: 76vh;}
+
+:root {--blue: #27A9E1; --red: #EA0E61; --green: #95BF18; --gray: #666666; --blue-light: #59b9e1; --red-light: #f05490; --green-light: #b9c989; --gray-light: #a2a2a2;}
+.topo {position: fixed; bottom: 20px; right: 20px; cursor: pointer; color: #fff; width: 40px; height: 40px; border-radius: 50%; background-color: #EA0E61; font-size: 0.7rem; text-align: center; line-height: 40px; font-weight: 700;}
+.topo a {text-decoration: none; color: #fff;}
+.topo img {width: 20px; padding-top: 9px; font-weight: 700;}
+
+#logo {
+  width: 80px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.kids {
+  color: #EA0E61;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: small;
+  font-weight: 600;
+}
+
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+    width: 100%;
+    background: var(--blue);
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover { background: var(--red); }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+#blue {background-color: var(--blue); flex: 1;}
+#red {background-color: var(--red); flex: 1;}
+#green {background-color: var(--green); flex: 1;}
+#gray {background-color: var(--gray); flex: 1;}
+
+.menu:hover {color: #000;}
+
+#hamitems a:nth-child(1) {background-color: var(--blue);}
+#hamitems a:nth-child(2) {background-color: var(--red);}
+#hamitems a:nth-child(3) {background-color: var(--green);}
+#hamitems a:nth-child(4) {background-color: var(--gray);}
+
+#hamitems a:nth-child(1):hover {color: #000;}
+#hamitems a:nth-child(2):hover {color: #000;}
+#hamitems a:nth-child(3):hover {color: #000;}
+#hamitems a:nth-child(4):hover {color: #000;}
+
+.conteiner-logo {
+    height: 100vh;
+    background-image: url(images/foto-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* .conteiner-logo img {width: 100px; position: absolute; bottom: 1px; left: 50%; transform: translateX(-50%); background-color: #fff; opacity: 0.9;} */
+
+.sec-equipes {color: #000;}
+.sec-equipes h1 {text-align: center; margin-top: 2rem;}
+
+#tabela-equipes, #tabela-desempenho {width: 70%; margin: 3rem auto; border-collapse: collapse; color: #000;}
+#tabela-equipes th, #tabela-desempenho th {background-color: var(--blue); color: white; font-weight: 500; padding: 0.3rem;}
+#tabela-equipes tr:nth-child(even) {background-color: rgb(208, 208, 208);}
+#tabela-equipes tr:hover, #tabela-desempenho tr:hover {cursor: pointer;}
+#tabela-equipes tr td, #tabela-desempenho tr td {padding: 0.6rem;}
+#tabela-equipes tr td:nth-child(1), #tabela-equipes tr td:nth-child(2), #tabela-desempenho tr td {text-align: center;}
+#tabela-equipes tr td:nth-child(2), #tabela-desempenho tr td:nth-child(2) {display: flex; justify-content: center; align-items: center;}
+#tabela-equipes img, #tabela-desempenho img {width: 40px; border: 1px solid rgb(187, 187, 187);}
+#tabela-desempenho tbody tr {border-bottom: 1px solid lightgray;}
+
+.sec-boletins {background-color: var(--blue-light); color: #000; height: 110vh; padding-top: 2rem;}
+.sec-boletins h1 {padding: 2rem; text-align: center;}
+.sec-boletins table {width: 450px; margin: 2rem auto; border-collapse: collapse;}
+.sec-boletins table thead tr {border-bottom: 1px solid lightgray; background-color: #d3d3d3;}
+.sec-boletins table thead tr th {padding: 0.7rem;}
+.sec-boletins table tr {text-align: center;}
+.sec-boletins table tbody tr:nth-child(even) {background-color: #d3d3d3;}
+.sec-boletins table tbody tr:nth-child(odd) {background-color: #fff;}
+.sec-boletins table td {padding: 0.5rem;}
+.sec-boletins img {width: 25px;cursor: pointer;}
+
+.sec-desempenho h1 {color: #000; text-align: center; margin-top: 2rem;}
+.sec-desempenho .band-pais {display: flex; flex-direction: column;}
+.sec-desempenho tfoot {color: #000; background-color: #fff;}
+.sec-desempenho tfoot #td-tfoot {background-color: #fff; font-size: 0.7rem; text-align: left; padding: 0;}
+.sec-desempenho tbody tr td:nth-child(1) {font-size: 1.2rem;}
+.sec-desempenho tbody tr td:nth-child(3), .sec-desempenho tbody tr td:nth-child(4) {text-align: center;}
+.dados {display: flex; flex-direction: column; align-items: center;}
+.sec-desempenho .diamond {width: 20px; height: 20px; border-radius: 50%; background-color: #b9f2ff;}
+.sec-desempenho .gold {width: 20px; height: 20px; border-radius: 50%; background-color: #FFD700;}
+.sec-desempenho .silver {width: 20px; height: 20px; border-radius: 50%; background-color: #C0C0C0;}
+.sec-desempenho .bronze {width: 20px; height: 20px; border-radius: 50%; background-color: #CD7F32;}
+.sec-desempenho .iron {width: 20px; height: 20px; border-radius: 50%; background-color: #61666A;}
+
+.sec-projeto {color: #fff; height: 50vh; background-color: var(--blue);}
+.sec-projeto h1 {padding: 2rem; color: #fff; text-align: center;}
+.sec-projeto .conteiner-content-projeto {display: flex; justify-content: space-evenly;}
+.sec-projeto .conteiner-content-projeto div {width: 30%; padding: 1rem; text-align: center; background-color: #fff}
+.sec-projeto .conteiner-content-projeto div a {text-decoration: none; color: #000; font-weight: 600; display: block;}
+
+footer {background-color: whitesmoke;}
+footer table {text-align: center; width: 100%; margin: auto; padding-top: 3rem;}
+footer table a {text-decoration: none; color: #000;}
+footer table a:hover {text-decoration: underline;}
+footer table img {width: 120px; padding-top: 3rem; ;}
+
+@media only screen and (max-width: 768px) {
+    body {background-position: center;}
+    header .conteiner {flex-direction: column;}
+    #tabela-equipes, #tabela-desempenho {font-size: 0.6rem; width: 95%;}
+    .sec-boletins table {width: 80%; font-size: 0.6rem;}
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+   
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: var(--red);
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+
+    #hamnav label:hover {
+      cursor: pointer;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+
+  sup {font-size: x-small; color: #555;}
